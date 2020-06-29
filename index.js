@@ -7,3 +7,7 @@ function run() {
   const previewFrame = document.getElementById("previewFrame").contentWindow;
   previewFrame.preview(code);
 }
+
+function say(txt) {
+  document.body.insertAdjacentHTML("beforeend", `${txt}<br>`);
+}

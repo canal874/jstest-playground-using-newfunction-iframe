@@ -2,6 +2,6 @@ function preview(code) {
   new Function(code)();
 }
 
-function say(txt) {
+function child_say(txt) {
   document.body.insertAdjacentHTML("beforeend", `${txt}<br>`);
 }
