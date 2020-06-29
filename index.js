@@ -2,12 +2,12 @@
  * JS Playground implementation using new Function() in iframe
  */
 
-const run = function() {
+function run() {
   const code = document.getElementById("code").value;
   const previewFrame = document.getElementById("previewFrame").contentWindow;
   previewFrame.preview(code);
-};
+}
 
-const say = function(txt) {
+function say(txt) {
   document.body.insertAdjacentHTML("beforeend", `${txt}<br>`);
-};
+}

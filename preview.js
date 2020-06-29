@@ -1,7 +1,7 @@
-const preview = function(code) {
+function preview(code) {
   new Function(code)();
-};
+}
 
-const child_say = function(txt) {
+function child_say(txt) {
   document.body.insertAdjacentHTML("beforeend", `${txt}<br>`);
-};
+}
