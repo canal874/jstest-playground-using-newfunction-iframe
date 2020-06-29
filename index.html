@@ -7,12 +7,12 @@
   <body>
     Code Input:<br />
     <textarea id="code">
-      say("(1) 'Hello!'");
-      try {
-        parent.say("(2) 'Hello!'");
-      } catch (e) {
-        say(`(2) Cannot say hello to parent: ${e}`);
-      }
+say("(1) 'Hello!'");
+try {
+  parent.say("(2) 'Hello!'");
+} catch (e) {
+  say(`(2) Cannot say hello to parent: ${e}`);
+}
       </textarea
     ><br />
     <input type="button" value="Run" onclick="run()" /><br />
